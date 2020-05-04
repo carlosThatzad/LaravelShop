@@ -10,33 +10,36 @@
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('contact-us')}}">Contacto</a>
+                    <a class="nav-link"  href="{{route('contact-us')}}">Contacto</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Categorías
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!--<a class="dropdown-item" href="{{ route('articulos.categ', ["2"])}}">HTML</a>
-                            <a class="dropdown-item" href="{{ route('articulos.categ', ["3"])}}">CSS</a>
-                            <a class="dropdown-item" href="{{ route('articulos.categ', ["4"])}}">JS</a>
-                            <a class="dropdown-item" href="{{ route('articulos.categ', ["1"])}}">C++</a>
-                            <a class="dropdown-item" href="{{ route('articulos.categ', ["6"])}}">PHP</a>
-                            <a class="dropdown-item" href="{{ route('articulos.categ', ["7"])}}">MySQl</a>
-                            <a class="dropdown-item" href="{{ route('articulos.categ', ["8"])}}">Java</a>
+                            <a class="dropdown-item" href="{{ route('articulos.categ', ["1"])}}">Mansion</a>
+                            <a class="dropdown-item" href="{{ route('articulos.categ', ["2"])}}">Duplex</a>
+                            <a class="dropdown-item" href="{{ route('articulos.categ', ["3"])}}">Piso</a>
+                            <a class="dropdown-item" href="{{ route('articulos.categ', ["4"])}}">Habitación</a>
+                            <a class="dropdown-item" href="{{ route('articulos.categ', ["5"])}}">Torre</a>
+                            <a class="dropdown-item" href="{{ route('articulos.categ', ["6"])}}">Terreno</a>
+                            <a class="dropdown-item" href="{{ route('articulos.categ', ["7"])}}">Locales</a>
 
--->
+
                         </div>
                     </a>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="/login" role="button" tabindex="-1" aria-disabled="true">Login</a>
+                    <a class="nav-link " href="/login" role="button" tabindex="-1" aria-disabled="true">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{route('user.create')}}" role="button" tabindex="-1" aria-disabled="true">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{route('user.login')}}" role="button" tabindex="-1" aria-disabled="true">Zona Cliente</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
         </div>
     </nav>
 </header>

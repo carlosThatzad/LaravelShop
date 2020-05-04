@@ -1,11 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+section.homebase {
+    background: url(/images/wallpaper.jpeg)!important;
+    /* Nuestra imagen de fondo */
+    background-repeat: no-repeat!important;
+    /* Indicamos que no se repetira */
+    background-size: cover!important;
+    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed!important;
+    /* Establecemos una posicion fija para la imagen */
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+}
+
 
 :root {
     --blue: #3490dc;
@@ -11159,23 +11172,6 @@ section.homebase #imghom {
     flex: 0 0 0;
 }
 
-section.homebase-admin {
-    background: url(/images/foto2.jpg?e42a7beafd2d038f65da9639be562af3);
-    /* Nuestra imagen de fondo */
-    background-repeat: no-repeat;
-    /* Indicamos que no se repetira */
-    background-size: cover;
-    /* Encajamos la imagen al 100% del ancho */
-    background-attachment: fixed;
-    /* Establecemos una posicion fija para la imagen */
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    background: #fafafa;
-}
 
 .wrapper {
     width: 10%;
@@ -11183,7 +11179,7 @@ body {
 
 .articulo {
     color: white;
-    background-color: #6c4675;
+    background-color: rgba(19, 35, 47, .9);
     opacity: 0.8;
 }
 
@@ -11261,4 +11257,9 @@ textarea {
 #exampleFormControlTextarea1 {
     width: 100px;
 }
+
+.imgalumn{
+
+}
+
 
