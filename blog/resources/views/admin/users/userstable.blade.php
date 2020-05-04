@@ -1,6 +1,8 @@
 
 @extends('layouts.admin')
 @section('content')
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -8,10 +10,10 @@
     <div style="height: auto;">
 
         <div class="btn-group mt-5 ml-5 mb-4">
-            <a href="{{ route('admin.user.create') }}" class="btn btn-info" >Añadir Usuario</a>
+            <a href="{{ route('admin.user.create') }}" class="btn btn-info" ><span style='font-size:20px;color:white'>&#9817;</span> Añadir Usuario</a>
         </div>
         <div class="btn-group mt-4 ml-5 align-items-center">
-            <a href="{{ route('admin.tablehome') }}" class="btn btn-info" >Administrador Publicaciones</a>
+            <a href="{{ route('admin.tablehome') }}" class="btn btn-info" ><span style='font-size:20px;color:white'>&#9993;</span> Administrador Publicaciones</a>
 
         </div>
         <table col="8" class="table table-striped table-dark" align="center" style=" width: 80%;">

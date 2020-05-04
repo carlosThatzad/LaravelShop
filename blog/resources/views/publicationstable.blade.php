@@ -15,15 +15,14 @@
         </div>
     </div></div>
     <div style="   height: 70vh;">
-
         <div class="btn-group mt-5 ml-5 mb-4">
             <a href="{{ route('articulo.create') }}" class="btn btn-info" >Añadir Articulo</a>
         </div>
-
-
+        <div class="btn-group mt-5 ml-5 mb-4">
+            <a href="{{route('admin.index')}}" class="btn btn-info" >Log out</a>
+        </div>
         <table col="8" class="table table-striped table-dark" align="center" style=" width: 80%;">
-
-            <thead >
+            <thead>
             <tr>
                 <th scope="col">Titulo</th>
                 <th scope="col">Nombre categoria</th>
@@ -36,7 +35,6 @@
             </thead>
             <tbody>
             @foreach($publications as $publication)
-
                 <tr>
                     <td>{{ $publication->nombre }}</td>
                     <td>{{ $publication->categories->title }}</td>

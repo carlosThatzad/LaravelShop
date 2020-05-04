@@ -21,4 +21,29 @@ foreach ($publications as $publication){
             ->with('publications', $publications);
 
     }
+
+    function show($id){
+
+        $articulo = Publication::where('id', '=', $id)->first();
+
+        if(empty($articulo)){
+            abort(404);
+        }
+
+        $articulo->image = "/images/".$articulo->image;
+
+
+        return view('articulo')
+            ->with('articulo', $articulo);
+
+    }
+
+
+    public function contactUS()
+{
+    return view('contactUS');
+}
+
+
+
 }

@@ -8,10 +8,11 @@
     <div style="height: auto;">
 
         <div class="btn-group mt-5 ml-5 mb-4">
-            <a href="{{ route('admin.articulo.create') }}" class="btn btn-info" >Añadir Articulo</a>
+            <a href="{{ route('admin.articulo.create') }}" class="btn btn-info fa fa-bag" ><span style='font-size:20px;color:white'>&#9993;</span> Añadir Articulo</a>
+            <i class="fa fa-suitcase" aria-hidden="true"></i>
         </div>
-        <div class="btn-group mt-4 ml-5 align-items-center">
-            <a href="{{ route('admin.tableusers') }}" class="btn btn-info" >Administración de Usuarios</a>
+        <div class="btn-group mt-4 ml-5 align-items-center ">
+            <a href="{{ route('admin.tableusers') }}" class=" btn btn-info " ><span style='font-size:20px;color:white'>&#9817;</span> Administración de Usuarios</a>
         </div>
         <table col="8" class="table table-striped table-dark" align="center" style=" width: 80%;">
 

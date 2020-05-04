@@ -19,12 +19,12 @@ use Illuminate\Support\Facades\Route;
 //Categoríaas
 Route::get('articulos/{categoria_id}','CategorieController@categ')->name('articulos.categ');
 //Contacto
-Route::get('contact-us', 'HomeController@contactUS')->name('contact-us');
+Route::get('contact-us', 'StaticController@contactUS')->name('contact-us');
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@contactUSPost']);
 
 //Articulos
-Route::get('articulo/{id}','HomeController@show')->name('articulo.show');
-Route::get('','StaticController@home');
+Route::get('articulo/{id}','StaticController@show')->name('articulo.show');
+Route::get('','StaticController@home')->name('index');
 
 //Usuarios
 Route::get('user/create','UsersController@usercreate')->name('user.create');
@@ -46,6 +46,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes(['register' => false]);
 
 
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
 

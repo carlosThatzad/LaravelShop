@@ -16,11 +16,15 @@ class CategorieController extends Controller
 
     function categ($categoria_id){
 
-        $articulos =Publication::where('category_id','=',$categoria_id)->paginate(10);
-        if(empty($articulos)){
+        $publications =Publication::where('category_id','=',$categoria_id)->paginate(10);
+        if(empty($publications)){
             abort(404);
         }
-        return view('categoria')->with('articulos',$articulos);
+
+        foreach ($publications as $publication){
+            $publication->image = "/images/".$publication->image;
+        }
+        return view('welcome')->with('publications',$publications);
     }
 
 

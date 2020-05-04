@@ -1,7 +1,6 @@
 @extends('layouts.admin')
 @section('content')
     <link href="{{ asset('css/style1.css') }}" rel="stylesheet">
-
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <div class="row d-flex justify-content-center " style="width: 100%;height: 100vh;">
         <section class="content " style="width: 50em;">
@@ -35,7 +34,7 @@
                         <div id="signup">
                             <h1>Create Product</h1>
 
-                            <form action="{{ route('admin.articulo.store') }}" enctype="multipart/form-data" method="post" role="form">
+                            <form action="{{ route('articulo.store') }}" enctype="multipart/form-data" method="post" role="form">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="top-row">
@@ -124,60 +123,64 @@
 
 
 
-                <script>
+                        <script>
 
-                    $(document).ready(function() {
-                        $('#summernote').summernote();
-                        $('#summernote2').summernote();
+                            $(document).ready(function() {
+                                $('#summernote').summernote();
+                                $('#summernote2').summernote();
 
-                    });
-                    $('.form').find('input, textarea').on('keyup blur focus', function (e) {
+                            });
+                            $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 
-                        var $this = $(this),
-                            label = $this.prev('label');
+                                var $this = $(this),
+                                    label = $this.prev('label');
 
-                        if (e.type === 'keyup') {
-                            if ($this.val() === '') {
-                                label.removeClass('active highlight');
-                            } else {
-                                label.addClass('active highlight');
-                            }
-                        } else if (e.type === 'blur') {
-                            if( $this.val() === '' ) {
-                                label.removeClass('active highlight');
-                            } else {
-                                label.removeClass('highlight');
-                            }
-                        } else if (e.type === 'focus') {
+                                if (e.type === 'keyup') {
+                                    if ($this.val() === '') {
+                                        label.removeClass('active highlight');
+                                    } else {
+                                        label.addClass('active highlight');
+                                    }
+                                } else if (e.type === 'blur') {
+                                    if( $this.val() === '' ) {
+                                        label.removeClass('active highlight');
+                                    } else {
+                                        label.removeClass('highlight');
+                                    }
+                                } else if (e.type === 'focus') {
 
-                            if( $this.val() === '' ) {
-                                label.removeClass('highlight');
-                            }
-                            else if( $this.val() !== '' ) {
-                                label.addClass('highlight');
-                            }
-                        }
+                                    if( $this.val() === '' ) {
+                                        label.removeClass('highlight');
+                                    }
+                                    else if( $this.val() !== '' ) {
+                                        label.addClass('highlight');
+                                    }
+                                }
 
-                    });
+                            });
 
-                    $('.tab a').on('click', function (e) {
+                            $('.tab a').on('click', function (e) {
 
-                        e.preventDefault();
+                                e.preventDefault();
 
-                        $(this).parent().addClass('active');
-                        $(this).parent().siblings().removeClass('active');
+                                $(this).parent().addClass('active');
+                                $(this).parent().siblings().removeClass('active');
 
-                        target = $(this).attr('href');
+                                target = $(this).attr('href');
 
-                        $('.tab-content > div').not(target).hide();
+                                $('.tab-content > div').not(target).hide();
 
-                        $(target).fadeIn(600);
+                                $(target).fadeIn(600);
 
-                    });
+                            });
+
+
+                            Resources
+                        </script>
+                        <style>
 
 
 
-                </script>
-
-                <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
+                        </style>
+                        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
 @endsection

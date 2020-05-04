@@ -1,6 +1,6 @@
 
 @yield('footer')
-<footer class="page-footer font-small mdb-color lighten-3 mt-4 pt-4">
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
 
     <div class="container mt-2">
 
@@ -10,7 +10,7 @@
 
                 <div  class=" footimage view overlay z-depth-1-half" style="width:160px;height: 120px;" >
 
-                    <a href="">
+                    <a href=""> <img src="../images/footer1.png" class="img-fluid" alt="">
                         <div class="mask rgba-white-light"></div>
                     </a>
                 </div>
@@ -21,7 +21,7 @@
 
                 <div class=" footimage view overlay z-depth-1-half">
 
-                    <a href="">
+                    <a href=""><img src="../images/footer2.png" class="img-fluid" alt="">
                         <div class="mask rgba-white-light"></div>
                     </a>
                 </div>
@@ -32,7 +32,7 @@
 
                 <div class=" footimage view overlay z-depth-1-half" >
 
-                    <a href="">
+                    <a href=""><img src="../images/footer3.png" class="img-fluid" alt="">
                         <div class="mask rgba-white-light"></div>
                     </a>
                 </div>
@@ -43,7 +43,7 @@
 
                 <div class="view overlay z-depth-1-half">
 
-                    <a href="">
+                    <a href=""><img src="../images/footer4.png" class="img-fluid" alt="">
                         <div class="mask rgba-white-light"></div>
                     </a>
                 </div>
@@ -54,7 +54,7 @@
 
                 <div class="view overlay z-depth-1-half">
 
-                    <a href="">
+                    <a href=""><img src="../images/footer5.jpg" class="img-fluid" alt="">
                         <div class="mask rgba-white-light"></div>
                     </a>
                 </div>
@@ -64,7 +64,7 @@
 
                 <div class="view overlay z-depth-1-half">
 
-                    <a href="">
+                    <a href=""><img src="../images/footer6.png" class="img-fluid" alt="">
                         <div class="mask rgba-white-light"></div>
                     </a>
                 </div>
